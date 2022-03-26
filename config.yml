@@ -1,11 +1,11 @@
-token: "lip_1MsgjrHZMpAYylrXfaAJ"         # Lichess OAuth2 Token.
+token: "lip_kfK1RkmQJQbwnDb52G05"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"               # Directory containing the engine.
-  name: "stockfish"        # Binary name of the engine to use.
+  name: "fairy-stockfish-largeboard_x86-64-modern"        # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   polyglot:
-    enabled: true                         # Activate polyglot book.
+    enabled: false                         # Activate polyglot book.
     books:
       white: "lichess-book"                      # Name of the book to use as white.
       black: "govi"                         # Name of the book to use as black.
@@ -46,6 +46,8 @@ engine:                                   # Engine settings.
     Skill Level: 20
     UCI_Elo : 2850
     MultiPV: 71
+    Use NNUE: true                       # allow bot to use neural networks
+    EvalFile: atomic-36ea696742e1.nnue:kingofthehill-86a538a53974.nnue:3check-3ed5960cfcf3.nnue:racingkings-67476a9e2e20.nnue  
     
 move_overhead_multiplier: 1.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
